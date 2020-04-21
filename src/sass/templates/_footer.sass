@@ -1,0 +1,183 @@
+.footer
+  padding-top: 3.714rem
+  background-color: $footer-bg
+  &__container
+    margin: 0 auto
+    max-width: 90.429rem
+    border-bottom: 1px solid #5e5d69
+  &__first-block
+    display: flex
+    padding-bottom: 2.571rem
+    justify-content: space-between
+  &__logo
+    min-width: 19%
+  &__logo-image
+    width: 100%
+    max-width: 10.142rem
+    height: auto 
+  &__copyright
+    color: $light
+    font-family: 'Roboto-Light', sans-serif
+  &__phone-box
+    margin-left: 5.357rem
+    color: $light
+    text-align: right
+  &__phone-text
+    display: block
+    font-family: 'Roboto-Light', sans-serif
+    font-size: 0.857rem
+    margin-bottom: 0.357rem
+  &__phone-number
+    font-family: 'Roboto-Bold', sans-serif
+    font-size: 1.357rem
+    color: $light
+    text-decoration: none
+    transition: color 0.3s
+    &:hover
+      color: $yellow
+  &__button-phone
+    display: flex
+    padding: 1.071rem 1.643rem
+    margin-left: auto
+    margin-right: 0px
+  &__second-block
+    display: flex
+    padding: 2.857rem 0rem
+    justify-content: space-between
+  &__social-icon
+    display: inline-block
+    width: 2.714rem
+    height: 2.714rem
+    margin-left: 0.429rem
+    border: 1px solid $light
+    border-radius: 2px
+    box-shadow: none
+    transition: box-shadow 0.2s
+    &:hover
+      box-shadow: 0px 0px 10px rgba($light, 0.5)
+
+  &__vk-link
+    background: transparent url('../img/footer/vk-icon.png') no-repeat center
+  &__instagram-link
+    background: transparent url('../img/footer/intagram-icon.png') no-repeat center
+  &__youtube-link
+    background: transparent url('../img/footer/youtube-icon.png') no-repeat center
+  &__facebook-link
+    background: transparent url('../img/footer/facebook-icon.png') no-repeat center
+  &__twitter-link
+    background: transparent url('../img/footer/twitter-icon.png') no-repeat center
+
+.copyright
+  &__text
+    text-align: center
+    position: relative
+    display: block
+    margin: 0.2rem 0rem
+    &--link
+      color: $light
+      text-decoration: none
+  
+.leto-list
+  min-width: 14%
+  &__ul
+    padding: 0
+    margin: 0
+    list-style: none
+    color: $light
+    font-family: 'Roboto-Light', sans-serif
+  &__li
+    margin-bottom: 0.571rem
+    &:first-child
+      color: $yellow
+      font-family: 'Roboto-Bold', sans-serif
+      font-size: 1.142rem
+      margin-bottom: 0.5rem
+    & a
+      text-decoration: none
+      color: $light
+      text-shadow: none
+      &:hover
+        text-shadow: 0px 0px 5px rgba($light, 0.5)
+
+.clients-list
+  min-width: 13%
+  &__ul
+    padding: 0
+    margin: 0
+    list-style: none
+    color: $light
+    font-family: 'Roboto-Light', sans-serif
+  &__li
+    margin-bottom: 0.571rem
+    &:first-child
+      color: $yellow
+      font-family: 'Roboto-Bold', sans-serif
+      font-size: 1.143rem
+      margin-bottom: 0.5rem
+    & a
+      text-decoration: none
+      color: $light
+      text-shadow: none
+      &:hover
+        text-shadow: 0px 0px 5px rgba($light, 0.5)
+
+.clubs-list
+  &__ul
+    padding: 0
+    margin: 0
+    list-style: none
+    color: $light
+  &__li
+    margin-bottom: 1.428rem
+    &:first-child
+      color: $yellow
+      font-family: 'Roboto-Bold', sans-serif
+      font-size: 1.143rem
+      margin-bottom: 0.428rem
+
+.phone-list
+  &__ul
+    padding: 0
+    margin: 0
+    list-style: none
+    color: $light
+  &__li
+    margin-bottom: 1.142rem
+    &:first-child
+      color: $yellow
+      font-family: 'Roboto-Bold', sans-serif
+      font-size: 1.142rem
+
+.clubs-list
+  &__policy
+    &:last-of-type
+      margin-bottom: 0px
+  &__checkbox
+    opacity: 0
+    visibility: hidden
+    &:checked +
+      .clubs-list__label
+        &::before
+          background: $yellow url('../img/policy/policy.png') no-repeat center / 80%
+          border: 1px solid $yellow
+  &__label
+    display: flex
+    margin-top: -0.928rem
+    cursor: pointer
+    text-shadow: none
+    &:hover
+      text-shadow: 0px 0px 5px rgba($light, 0.5)
+    &::before
+      content: ''
+      margin-top: 0.357rem
+      margin-right: 0.714rem
+      width: 1.286rem
+      height: 1.286rem
+      border: 1px solid $grey
+      background-color: $light
+      border-radius: 4px
+      cursor: pointer
+  &__label-bold
+    font-family: 'Roboto-Medium', sans-serif
+  &__label-ligth
+    font-family: 'Roboto-Light', sans-serif

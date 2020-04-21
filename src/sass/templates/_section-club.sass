@@ -1,0 +1,144 @@
+.club-links-section
+  padding: 20px
+  border-bottom: 1px solid $grey
+.club-links__text
+  font-family: 'Roboto-Medium', sans-serif
+  font-size: 13px
+  & a
+    color: #2e2e2e
+    text-decoration: none
+  &--links
+    color: #2e2e2e
+  &--arrows
+    font-family: 'Roboto-Medium', sans-serif
+    margin: 0px 5px
+  &--not-active
+    font-family: 'Roboto-Light', sans-serif
+    color: $grey
+
+.club-review
+  padding-top: 38px
+  &__row
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__card
+    width: 48.6%
+  &__image
+    position: relative
+    width: 100%
+    min-height: 319px
+    &--1
+      background: url('../img/club-choice/club-choice-image-1.png') no-repeat center
+    &--2
+      background: url('../img/club-choice/club-choice-image-2.png') no-repeat center
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: #271930
+      opacity: 0.7
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background: url('../img/club-choice/text-frame.png') no-repeat center
+  &__image-text
+    font-family: 'Roboto-Light', sans-serif
+    margin: 0
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    text-transform: uppercase
+    font-weight: normal
+    text-align: center
+    color: $light
+    font-size: 2.571rem
+    width: 100%
+
+.schedule
+  width: 100%
+  padding-left: 42px
+  &__box
+    display: flex
+    margin-top: 14px
+    &:first-of-type
+      margin-top: 10px
+  &__image
+    min-width: 45px 
+    margin-top: 4px
+    & img
+  &__text
+    color: #2e2e2e
+    margin-left: 18px
+    & a
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+    &--title
+      display: block
+      font-family: 'Roboto-Medium', sans-serif
+      font-size: 1.286rem
+    &--subtitle
+      display: block
+      margin-top: 4px
+      min-width: 100%
+      color: #2e2e2e
+      font-family: 'Roboto-Light', sans-serif
+      font-size: 1.214rem
+  &__button
+    padding: 16px 33px
+    margin-top: 26px
+    margin-left: 3px
+    &:hover
+      box-shadow: 0px 0px 10px rgba($yellow, 0.5) 
+
+
+
+.club-about
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  &__box
+    width: 143px
+    height: 154px
+    border: 1px solid $grey
+    margin: 50px 11px 0px
+    &--1
+      margin-left: 0
+    &--7
+      margin-right: 0
+
+.about-box-info
+  padding-top: 15px 
+  position: relative
+  &__image
+    display: flex
+    justify-content: center
+    margin: 0 auto
+    max-width: 101px
+    width: 100%
+  &__text
+    margin-top: 32px
+    text-align: center
+    font-family: 'Roboto-Bold', sans-serif
+    font-size: 14px
+    width: 95%
+    color: #2e2e2e
+    &::after
+      content: ''
+      position: absolute
+      bottom: 60px
+      left: 50%
+      transform: translateX(-50%)
+      width: 101px
+      height: 1px
+      background-color: #e1dfe2
+    & sup
+      font-size: 9px
+
+
+
+    

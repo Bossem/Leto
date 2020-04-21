@@ -1,0 +1,71 @@
+.burger-menu
+  display: none
+  position: fixed
+  z-index: 199
+  left: 0
+  top: 0
+  padding-top: 55px
+  width: 100%
+  height: 100%
+  background-color: rgba(#181728, 0.9)
+  &--active
+    display: block
+  &__content
+    padding-top: 50px
+    position: relative
+    max-width: 300px
+    width: 100%
+    margin: 0 auto 
+  &__phone-box
+    display: flex
+    flex-direction: column
+    justify-content: center
+    & button
+      max-width: 60%
+      margin: 0 auto
+      padding: 10px 20px
+      margin-bottom: 20px
+  &__phone-box-text
+  &__phone-text
+    display: block
+    color: $light
+    text-align: center
+  &__phone-number
+    font-family: 'Roboto-Medium', sans-serif
+    display: block
+    text-decoration: none
+    color: $light
+    text-align: center
+    margin-top: 5px
+    margin-bottom: 20px
+    font-size: 18px
+  &__social-links
+    margin: 0 auto
+  &__social-links-container
+    display: flex
+    justify-content: center
+    & a
+      border: none
+      margin: 0px 10px
+      display: inline-block
+
+
+
+.nav-links
+  position: relative
+  &__ul
+    padding: 0
+    list-style: none
+    text-align: center
+    font-family: 'Roboto-Bold', sans-serif
+  &__li
+    text-transform: uppercase
+    font-size: 18px
+    margin-bottom: 20px
+    & a
+      color: $yellow
+      text-decoration: none
+
+
+
+    

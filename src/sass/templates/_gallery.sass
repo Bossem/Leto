@@ -1,0 +1,42 @@
+.gallery
+  &__slider
+    // min-width: 100%
+    background: transparent url('../img/gallery/slider-bg.png')
+    background-repeat: repeat-x
+    background-position: center
+  &__slider-box
+    margin: 0 auto
+    max-width: 860px
+  &__slider-container
+    padding: 0px 55px
+  & .swiper-pagination-bullet
+    width: 1.572rem
+    height: 4px
+    border-radius: 30px
+    background: #fff
+    opacity: 1
+    &-active
+      background-color: $yellow
+  & .swiper-button-prev:after
+    display: none
+  & .swiper-button-next:after
+    display: none
+  & .swiper-button-next
+    right: 0px
+  & .swiper-button-prev
+    left: 0px
+  &__slider-pagination
+    margin-bottom: 30px 
+  &__button-prev
+    min-width: 38px
+    min-height: 38px
+    background: transparent url('../img/services/slider-button-prev.png') no-repeat center
+  &__button-next
+    min-width: 38px
+    min-height: 38px
+    background: transparent url('../img/services/slider-button-next.png') no-repeat center
+
+.swiper-slide
+  & img
+    width: 100%
+    height: auto

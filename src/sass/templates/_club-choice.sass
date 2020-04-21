@@ -1,0 +1,74 @@
+.club-choice
+  &__row
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__card
+    width: 48.6%
+    cursor: pointer
+    box-shadow: none
+    transition: box-shadow 0.5s
+    &:hover
+      box-shadow: 0px 0px 20px rgba($grey, 0.8)
+  &__image
+    position: relative
+    // max-width: 39.643rem
+    width: 100%
+    min-height: 22.786rem
+    &--1
+      background: url('../img/club-choice/club-choice-image-1.png') no-repeat center
+    &--2
+      background: url('../img/club-choice/club-choice-image-2.png') no-repeat center
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: #271930
+      opacity: 0.7
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background: url('../img/club-choice/text-frame.png') no-repeat center
+    &__club-image
+      width: 100%
+      height: auto
+  &__image-text
+    font-family: 'Roboto-Light', sans-serif
+    margin: 0
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    text-transform: uppercase
+    font-weight: normal
+    text-align: center
+    color: $light
+    font-size: 2.571rem
+    width: 100%
+  &__description
+    padding: 2.3rem 1.786rem
+    // max-width: 39.643rem
+    margin-top: -4px
+    display: flex
+    justify-content: space-between
+    border: 1px solid #e1dfe2
+  &__icon
+    width: 15%
+    max-width: 2.714rem
+    max-height: 2.714rem
+  &__description-text
+    width: 70%
+  &__description-title
+    display: block
+    text-align: center
+    font-weight: bold
+    font-family: 'Roboto-Medium', sans-serif
+    font-size: 1.286rem
+    margin-bottom: 5px
+  &__description-subtitle
+    display: block
+    text-align: center
+    font-family: 'Roboto-Light', sans-serif
+    font-size: 1.214rem

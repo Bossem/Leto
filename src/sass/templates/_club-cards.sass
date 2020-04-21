@@ -1,0 +1,195 @@
+.club-cards
+  padding-bottom: 4.571rem
+  &__row
+    display: flex
+    justify-content: space-between
+    width: 100%
+  &__col
+    &--1
+      position: relative
+      // padding: 61px 91px
+      max-width: 50%
+      max-height: 370px
+      & img
+        width: 100%
+        max-width: 550px
+    &--2
+      padding: 0px 0px 0px 5.071rem
+      max-width: 50%
+      width: 100%
+  &__image-1
+    position: relative
+    z-index: 5
+    margin: 0 auto
+    top: 50%
+    transform: translateY(-50%)
+    & img
+      width: 100%
+      height: auto
+      max-width: 384px
+  &__image-2
+    position: absolute
+    z-index: 4
+    width: 100%
+    height: auto
+    max-width: 384px
+    top: 0
+    left: 0
+    filter: blur(1px)
+  &__image-3
+    position: absolute
+    z-index: 4
+    width: 100%
+    height: auto
+    max-width: 384px
+    bottom: 0
+    right: 3%
+    filter: blur(1px)
+  &__input-box
+    display: block
+    margin-top: 2.142rem
+    margin-bottom: 0.714rem
+    width: 100%
+    &:last-of-type
+      margin-top: 0px
+      margin-bottom: 0px
+  & div.invalid
+    position: absolute
+    color: rgba(#bf2121, 1)
+    font-size: 0.786rem
+    margin-top: -1.071rem
+    margin-left: 2rem
+  &__input
+    width: 100%
+    font-family: 'Roboto-Light', sans-serif
+    font-size: 0.928rem
+    outline: none
+    border: none
+    border: 1px solid $grey
+    border-radius: 50px
+    padding: 1.072rem 0px 1.072rem 2rem
+  &__form
+    position: relative
+
+.cards-form-box
+  &__buttons
+    display: flex
+    justify-content: space-between
+    width: 100%
+  &__month-button
+    padding: 1.071rem 0rem
+    margin-right: 0.428rem
+    max-width: 8.571rem
+    width: 100%
+    background-color: transparent
+    border: 1px solid $grey
+    border-radius: 50px
+    text-transform: uppercase
+    font-size: 0.857rem
+    color: rgba($dark-blue, 0.6)
+    outline: none
+    cursor: pointer
+    &:hover
+      border: 1px solid $yellow
+    &--active
+      color: $dark-blue
+      border: 1px solid $yellow
+      background-color: $yellow
+    &:last-of-type
+      margin-right: 0px
+  &__label-bold
+    display: block
+    margin-top: 0.357rem
+    font-family: 'Roboto-Medium', sans-serif
+    font-size: 1.143rem
+  &__label-ligth
+    display: block
+    margin-top: 0.214rem
+    font-family: 'Roboto-Light', sans-serif
+    font-size: 1.143rem
+  &__policy-main
+    position: relative
+    margin-left: 1.5rem
+  &__form-button
+    display: flex
+    padding: 1.285rem 1.715rem
+    margin-top: 1.071rem
+    margin-right: 0px
+    margin-left: auto
+    box-shadow: none
+    transition: box-shadow 0.2s
+    &:hover
+      box-shadow: 0px 0px 10px rgba($yellow, 0.5)
+    
+.cards-form-box
+  &__policy
+    &:last-of-type
+      margin-bottom: 2.142rem
+  &__checkbox
+    opacity: 0
+    visibility: hidden
+    &:checked +
+      .cards-form-box__label
+        &::before
+          background: $yellow url('../img/policy/policy.png') no-repeat center / 80%
+          border: 1px solid $yellow
+  &__label
+    display: flex
+    cursor: pointer
+    &::before
+      content: ''
+      margin-top: 0.357rem
+      margin-right: 0.857rem
+      width: 1.5rem
+      height: 1.5rem
+      border: 1px solid $grey
+      background-color: $light
+      border-radius: 4px
+      cursor: pointer
+
+.cards-form-box
+  &__checkbox-main
+    opacity: 0
+    visibility: hidden
+    &:checked +
+      .cards-form-box__label-main
+        &::before
+          background: $yellow url('../img/policy/policy.png') no-repeat center / 80%
+          border: 1px solid $yellow
+  &__label-main
+    display: flex
+    font-family: 'Roboto-Light', sans-serif
+    font-size: 0.786rem
+    line-height: 155%
+    text-transform: uppercase
+    &::before
+      content: ''
+      margin-top: 0px
+      margin-right: 0.857rem
+      width: 1.5rem
+      height: 1.5rem
+      border: 1px solid $grey
+      background-color: $light
+      border-radius: 4px
+      cursor: pointer
+
+#club-cards-label-name
+  z-index: 100
+  position: absolute
+  top: 11.786rem
+  left: 1.857rem
+  font-family: 'Roboto-Light', sans-serif
+  font-size: 1rem
+  color: #94939a
+  & span
+    color: $yellow
+    
+#club-cards-label-phone
+  position: absolute
+  top: 15.714rem
+  left: 1.857rem
+  font-family: 'Roboto-Light', sans-serif
+  font-size: 1rem
+  color: #94939a
+  & span
+    color: $yellow

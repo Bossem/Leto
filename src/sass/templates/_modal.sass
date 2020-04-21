@@ -1,0 +1,209 @@
+.modal
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  display: none
+  justify-content: center
+  align-items: center
+  z-index: 250
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.4)
+  &--visible
+    opacity: 1
+    visibility: visible
+    display: flex
+  &__container-call
+    display: none
+    opacity: 0
+    visibility: hidden
+    position: relative
+    padding: 20px
+    max-height: 100%
+    max-width: 380px
+    max-height: 358px
+    width: 90%
+    &--visible
+      display: block
+      opacity: 1
+      visibility: visible
+  &__container-visit
+    display: none
+    opacity: 0
+    visibility: hidden
+    position: relative
+    padding: 20px
+    max-height: 100%
+    max-width: 380px
+    max-height: 358px
+    width: 90%
+    &--visible
+      display: block
+      opacity: 1
+      visibility: visible
+  &__close
+    position: absolute
+    margin: 0.785rem 0.857rem 0px 0px
+    top: -15px
+    right: -15px
+    width: 2rem
+    height: 2rem
+    background: transparent url(../img/modal/close.png) no-repeat center
+    border: none
+    cursor: pointer
+    outline: none
+  &__box
+    background-color: $modal-purple
+    color: $light
+    overflow: auto
+    max-height: 100%
+    position: relative
+    max-width: 340px
+    max-height: 318px
+    width: 100%
+  &__header
+    margin: 0
+    padding: 16px
+    color: $modal-purple
+    text-transform: uppercase
+    font-family: 'Roboto-Bold', sans-serif
+    background-color: $yellow
+    text-align: center
+  &__form
+    margin: 0 auto
+    padding: 26px 0px 29px
+    display: flex
+    flex-direction: column
+    max-width: 268px
+    width: 80%
+  &__input
+    margin-bottom: 12px
+    &:last-of-type
+      margin-bottom: 0px
+  &__policy
+    margin: 0 auto
+    margin-top: 4px
+    margin-bottom: 19px
+    max-width: 200px
+    text-transform: uppercase
+    font-size: 11px
+  &__button
+    margin: 0 auto
+    padding: 16px 0px
+    max-width: 100%
+    min-width: 160px
+  &__input-box
+    max-width: 100%
+    width: 100%
+    &--1
+      margin-bottom: 12px
+  & div.invalid
+    position: absolute
+    color: rgba(#bf2121, 1)
+    font-size: 11px
+    margin-top: -15px
+    margin-left: 28px
+  &__input
+    width: 100%
+    position: relative
+    font-family: 'Roboto-Light', sans-serif
+    font-size: 13px
+    outline: none
+    border: none
+    border-radius: 50px
+    padding: 15px 0px 15px 28px
+
+.modal
+  &__checkbox
+    opacity: 0
+    visibility: hidden
+    &:checked +
+      .modal__label
+        &::before
+          background: $light url('../img/policy/policy.png') no-repeat center / 80%
+  &__label
+    display: flex
+    &::before
+      content: ''
+      margin-top: -2px
+      margin-right: 11px
+      width: 24px
+      height: 16px
+      border: 1px solid $light
+      background-color: $light
+      cursor: pointer
+
+
+.thanks-modal
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  display: none
+  justify-content: center
+  align-items: center
+  z-index: 251
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.4)
+  &--visible
+    opacity: 1
+    visibility: visible
+    display: flex
+  &__container-thanks
+    display: none
+    opacity: 0
+    visibility: hidden
+    position: relative
+    padding: 20px
+    max-height: 100%
+    max-width: 380px
+    max-height: 358px
+    width: 90%
+    &--visible
+      display: block
+      opacity: 1
+      visibility: visible
+  &__close
+    position: absolute
+    margin: 0.785rem 0.857rem 0px 0px
+    top: -15px
+    right: -15px
+    width: 2rem
+    height: 2rem
+    background: transparent url(../img/modal/close.png) no-repeat center
+    border: none
+    cursor: pointer
+    outline: none
+  &__box
+    background-color: $modal-purple
+    color: $light
+    overflow: auto
+    max-height: 100%
+    position: relative
+    max-width: 340px
+    max-height: 318px
+    width: 100%
+  &__body
+    background-color: $dark-blue
+    color: $light
+    text-align: center
+  &__header
+    margin: 0
+    padding: 16px
+    color: $modal-purple
+    text-transform: uppercase
+    font-family: 'Roboto-Bold', sans-serif
+    background-color: $yellow
+    text-align: center
+  &__body-text
+    display: block
+    padding: 20px 0px
+    font-size: 20px

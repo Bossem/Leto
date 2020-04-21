@@ -1,0 +1,131 @@
+.main-slider
+  position: relative
+  width: 100%
+  background-image: linear-gradient(to right, #571a36, #1e1c34)
+  background-position: center
+  background-size: cover
+  &__container
+    width: 100%
+    height: auto
+  &__wrapper
+    width: 100%
+    height: auto
+  &__slide
+    width: 100%
+    height: auto
+    & img
+      width: 100%
+      height: 100%
+  & .swiper-pagination-bullet
+    width: 1.571rem
+    height: 0.285rem
+    border-radius: 30px
+    background: #fff
+    opacity: 1
+    &-active
+      background-color: $yellow
+  & .swiper-container-horizontal>.swiper-pagination-bullets
+    bottom: 10%
+  & .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+    margin: 0px 3px
+
+
+.slider
+  &-content
+    display: block
+    position: relative  
+    align-items: center
+    justify-content: space-between
+    max-width: 1920px
+    width: 100%
+    background: url('../img/main-slider/main-slider-bg.png') no-repeat center
+    & img
+      width: 100%
+      max-width: 1920px
+      height: auto
+  &-text
+    display: block
+    min-width: 100%
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+  &-subtitle-box
+    margin-top: 1.071rem
+  &-image
+    position: absolute
+    max-width: 51%
+    right: 2.143rem
+    bottom: 0
+    &--2
+      right: 15.143rem
+    & img
+      width: 100%
+      max-width: 70.143rem
+      height: auto
+
+.slider-title-box__title
+  font-family: 'Roboto-Light', sans-serif
+  text-transform: uppercase
+  &--1
+    font-family: 'Roboto-Light', sans-serif
+    display: block
+    color: $light
+    font-size: 3.428rem
+    margin-bottom: -0.714rem
+  &--2
+    position: relative
+    font-family: 'Roboto-Light', sans-serif
+    display: block
+    color: $yellow
+    font-size: 5.143rem
+    margin-bottom: -0.714rem
+    &::after
+      content: ''
+      position: absolute
+      display: block
+      top: -5rem
+      left: 0.714rem
+      width: 38.143rem
+      height: 12.571rem
+      background: url(../img/main-slider/frame.png) no-repeat center
+      background-size: contain
+  &--4
+    position: relative
+    font-family: 'Roboto-Light', sans-serif
+    display: block
+    color: $yellow
+    font-size: 5.143rem
+    margin-bottom: -0.714rem
+    &::after
+      content: ''
+      position: absolute
+      display: block
+      top: -5rem
+      left: 0.714rem
+      width: 42.6rem
+      height: 12.571rem
+      background: url(../img/main-slider/frame2.png) no-repeat center
+      background-size: contain
+  &--3
+    font-family: 'Roboto-Regular', sans-serif
+    display: block
+    color: $light
+    font-size: 3.428rem
+    margin: 0
+.slider-subtitle-box__subtitle
+  color: $light
+  font-size: 1.714rem
+  text-transform: uppercase
+  &--1
+    font-family: 'Roboto-Light', sans-serif
+    display: block
+    margin-bottom: 0.285rem
+  &--2
+    font-family: 'Roboto-Light', sans-serif
+    display: block
+    margin-bottom: 0.285rem
+  &--3
+    text-decoration: none
+    font-family: 'Roboto-Medium', sans-serif
+    display: block

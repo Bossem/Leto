@@ -1,0 +1,253 @@
+.header
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 200
+  padding: 20px 0px 0px
+  background: linear-gradient(to right, #561a36, #1e1c34)
+  &__content
+    z-index: 220
+    display: flex
+    justify-content: space-between
+  &__logo
+    margin-top: 0rem
+    max-width: 10rem
+  &__logo-img
+    width: 100%
+    height: auto
+  &__nav
+    display: flex
+    padding: 5px
+    // padding: 1.072rem 0rem
+  &__mini-menu-clubs
+    position: relative
+    max-height: 3.215rem
+    margin-right: 5.858rem
+  &__mini-menu-1
+    display: none
+    left: 0
+    top: 0
+    min-width: 12.857rem
+    min-height: 3.214rem
+    padding: 0.857rem 2.143rem
+    border: 1px solid $yellow
+    border-radius: 50px
+    background-color: transparent
+    color: $yellow
+    cursor: pointer
+    box-shadow: none
+    transition: box-shadow 0.2s
+    &:hover
+      box-shadow: 0px 0px 10px rgba($light, 0.5)
+    &--active
+      display: block
+  &__mini-menu-2
+    display: none
+    left: 0
+    top: 0
+    min-width: 12.857rem
+    padding: 0.857rem 2.143rem
+    border: 1px solid $yellow
+    border-radius: 25px 25px 0px 0px
+    background-color: $yellow
+    color: $dark-blue
+    cursor: pointer
+    &--active
+      display: block
+  &__mini-menu-clubs-2
+    display: none
+    padding: 0.929rem 1.786rem 2.357rem
+    position: absolute
+    z-index: 50
+    min-width: 294px
+    background-color: $yellow
+    border-radius: 0px 4px 4px 4px
+    &--active
+      display: block
+  &__policy
+    margin-bottom: 0.571rem
+    &:last-of-type
+     margin-bottom: 0px 
+  &__label
+    font-family: 'Roboto-Light', sans-serif
+    color: $dark-blue
+  &__label-bold
+    font-family: 'Roboto-Bold', sans-serif
+  &__label-ligth
+    display: block
+    margin-top: 2px
+    font-family: 'Roboto-Light', sans-serif
+  &__mini-menu-3
+    display: none
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    // padding: 5px 0px 0px 0px
+    cursor: pointer
+    &--active
+      display: flex
+  &__mini-menu-3-text-box
+    margin-left: 1.072rem
+  &__mini-menu-3-text-bold
+    display: block
+    font-family: 'Roboto-Bold', sans-serif
+    color: $yellow
+  &__mini-menu-3-text-light
+    display: block
+    font-family: 'Roboto-Light', sans-serif
+    color: $light
+  &__mini-menu-3-image
+    max-width: 2.285rem
+    max-height: 2.285rem
+    width: 100%
+    height: 100%
+  &__mini-menu-4
+    display: none
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    padding: 0.357rem 0rem 0rem 0rem
+    cursor: pointer
+    &--active
+      display: flex
+  &__mini-menu-4-text-box
+    margin-left: 1.072rem
+  &__mini-menu-4-text-bold
+    display: block
+    font-family: 'Roboto-Bold', sans-serif
+    color: $yellow
+  &__mini-menu-4-text-light
+    display: block
+    font-family: 'Roboto-Light', sans-serif
+    color: $light
+  &__mini-menu-4-image
+    max-width: 2.285rem
+    max-height: 2.285rem
+    width: 100%
+    height: 100%
+  &__image-arrow-down
+    width: 100%
+    height: auto
+    max-width: 1.071rem
+    margin-right: 0.714rem
+  &__button-text
+    font-family: 'Roboto-Bold', sans-serif
+    text-transform: uppercase
+    font-size: 0.857rem
+  &__sign-up-free-call
+    position: relative
+    // padding: 5px 0px
+    display: flex
+    color: $light
+    cursor: pointer
+    transition: color 0.3s
+    &:hover
+      color: $yellow
+  &__image-sign-up-free-call
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    height: 2.357rem
+    width: 2.285rem
+  &__sign-up-free-call-text
+    position: relative
+    display: inline-block
+    top: 50%
+    transform: translateY(-50%)
+    // padding: 0.357rem 0rem
+    margin-left: 0.4rem
+    font-family: 'Roboto-Bold', sans-serif
+  &__phone-box
+    position: relative
+    // padding: 0.357rem 0rem
+    margin-left: 5.357rem
+    max-height: 3.214rem
+    color: $light
+    text-align: right
+  &__phone-box-text
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+  &__phone-text
+    display: block
+    font-family: 'Roboto-Light', sans-serif
+    font-size: 0.857rem
+  &__phone-number
+    position: relative
+    font-family: 'Roboto-Bold', sans-serif
+    font-size: 1.357rem
+    color: $light
+    text-decoration: none
+    transition: color 0.3s
+    &:hover
+      color: $yellow
+  &__button-phone
+    padding: 1.071rem 1.642rem
+    margin-left: 1.642rem
+    max-height: 45px
+
+.header
+  &__checkbox
+    opacity: 0
+    visibility: hidden
+    &:checked +
+      .header__label
+        &::before
+          background: $light url('../img/policy/policy.png') no-repeat center / 80%
+  &__label
+    display: flex
+    &::before
+      content: ''
+      margin-top: 0.143rem
+      margin-right: 0.714rem
+      width: 1.286rem
+      height: 1.286rem
+      border: 1px solid #d1ab15
+      background-color: $light
+      border-radius: 4px
+      cursor: pointer
+
+.burger-menu-button
+  display: none
+  position: relative
+  top: 0
+  right: 0
+  width: 45px
+  height: 45px
+  border-radius: 50%
+  background-color: $yellow
+  & span
+    position: absolute
+    top: 50%
+    margin-top: -1px
+    left: 50%
+    margin-left: -10px
+    width: 20px
+    height: 2px
+    background-color: $dark-blue
+    &::before
+      content: ''
+      position: absolute
+      transform: translateY(-5px)
+      width: 20px
+      height: 2px
+      background-color: $dark-blue
+      transition: 0.2s
+    &::after
+      content: ''
+      position: absolute
+      transform: translateY(5px)
+      width: 20px
+      height: 2px
+      background-color: $dark-blue
+      transition: 0.2s
+
+.burger-menu-button--active
+  & span
+    height: 0
+    &::before
+      transform: rotate(45deg)
+    &::after
+      transform: rotate(-45deg)
+
+
